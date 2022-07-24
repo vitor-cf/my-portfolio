@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+/* Cabeçalho */
+a {
+    text-decoration: none; 
+    color: rgb(108, 31, 209);
+} 
+
+.box-header { 
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+} 
+    
+.email{
+    font-weight: 600;
+}
+.logo-grey {
+    width: 15%;
+}
+    
+
+.box-dois {
+    width: 100%;
+    display: flex;
+} 
+    
+  
+.box-tres {
+    width: 50%; 
+    display: flex; 
+    justify-content: space-evenly;
+}  
+
+/* Introdução */ 
+
+.box-intro {
+    width: 80%;
+    height: 70vh;
+    display: flex;  
+    margin: 0 auto;
+} 
+    
+.box-contact {
+    height: 30vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    margin: auto 0;
+}  
+
+
+ .icon {
+    width: 100%;
+ }   
+ .nome {
+    color: rgb(108, 31, 209);
+    font-size: 50px;
+    font-weight: 800;
+    width: 10%; 
+ } 
+ span {
+    color:rgb(108, 31, 209);
+    font-weight: 600;
+ }
+ p {
+    color: rgb(126, 125, 125);
+    width: 100%;
+ } 
+   
+ .box-text-intro {
+     width: 30%;
+     height: 70vh;
+     display: flex;
+     flex-direction: column;
+     margin: auto 100px;
+     
+ } 
+ .box-text-intro p {
+    margin-top: 50px;
+ }  
+
+ .perfil {
+     padding: 18px;
+     border-radius: 100%;
+     margin-left: 20vh;
+     width: 60%;
+ } 
+     
+ /* dark-mode / light-mode */
+    
+ .light-mode {
+     width: 5%;
+     margin-left: 10px;
+ }    
+ .dark-mode {
+     width: 5%;
+     margin-left: 10px;
+     display: none;
+ } 
+
+ /* Oq eu sei fazer */ 
+
+.box-service {
+    display: flex;
+    margin: auto 40vh;
+}
+.box-title {
+    color: rgb(126, 125, 125);
+}   
+.subtitle {
+    color: rgb(126, 125, 125);
+    font-size: 18px;
+} 
+.box-text-service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vh;
+    margin-top: 12vh; 
+    /*  border: 3px solid rgb(126, 125, 125);*/
+    border-radius: 5px;
+    padding: 10px;
+}  
+
+.box-text-service h2 {
+    text-align: center;
+} 
+.btn-work {
+    margin: 10px auto;
+    font-weight: 600;
+    width: 30%;
+    background-color: rgb(108, 31, 209);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-work:hover {
+    cursor: pointer;
+    color: white;
+}
+.flex {
+    width: 100%;
+    display: flex;
+}
+.image-tool {
+    margin: auto 25vh;
+}
+.image-tool img {
+    width: 100%;
+}
+    
+  
+
+    
+
+    
+    
+
+    
+    
