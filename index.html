@@ -11,69 +11,62 @@
     <title>Vitor</title>
 </head>
 <body>
-   
+    <!-- Cabeçalho -->
         <header>
-        
-            <div class="box-header" id="teste">
-                <div class="box-um">
-                    
-                    <img src="img/logo-vitor-grey.png" alt="" class="logo-grey" >
-                </div> 
-                <div class="box-dois">
-                    <a href="#" class="email">vitorcarv.ferreira@gmail.com</a> 
-                    <img src="img/sol.png" alt="" class="light-mode" id="sol">
-                    <img src="img/lua.png" alt="" class="dark-mode" id="lua">
-                </div> 
-                <div class="box-tres">
-                    <a href="#">Projetos</a>
-                    <a href="#">Resumo</a>
-                    <a href="#">Artigos</a>
+            <div class="box-flex">
+                <span class="logo">Logotipo</span> 
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>SERVICES</li>
+                <li>WORKS</li>
+            </ul> 
+            <button>
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
                 </div>
+                <span>Email</span>
+              </button>
             </div>
         </header> 
-        <!-- Intro -->
+        
+        <!-- TITULO/TEXT -->
+
         <main>
-            <div class="box-intro">
-                <div class="box-contact">
-                    <img src="img/github.png" alt="" class="icon">
-                    <img src="img/linkedin.png" alt="" class="icon">
-                    <img src="img/twitter.png" alt="" class="icon">
-                </div> 
-                <div class="box-text-intro">
-                    <h1 class="nome">VITOR FERREIRA</h1>
-                    <span>DESENVOLVEDOR FRONT-END</span>  
-                    <p>Vitor Ferreira. Desevolvedor front-end de Salvador, Brasil,
-                        em busca da primeira experiência profissional como Dev.
-                    </p>
-                </div> 
-                 <div class="box-perfil">
-                    <img src="img/undraw_Code_review_re_woeb.png" alt="" class="perfil">
-                 </div>   
-                    
+            <div class="box">
+                <div class="box-intro-glob">
+                    <div class="box-intro">
+                        <h1 class="name">VITOR FERREIRA</h1>
+                    <span class="text-intro">Oi, meu nome é Vitor.
+                        Sou desenvolvedor Front-end.
+                    </span>
+                    </div>
+                    <div class="box-btn-contact">
+                        <button class="cssbuttons-io-button">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
+                            <span>Download CV</span>
+                          </button>
+                    </div> 
                 </div>
-    
-                <!-- Oq eu posso fazer --> 
-                
-                <div class="box-service">
-                    <div class="box-title">
-                    <h1 class="title">O que eu posso fazer?</h1>
-                    <h2 class="subtitle">Ofertas de serviço</h2> 
-                </div> 
-            </div> 
-            <div class="flex">
-                <div class="box-text-service">
-                    <h2 class="subtitle">Aplicações web</h2> 
-                    <br>
-                    <p class="text">Desenvolvo aplicações web, utilizando
-                        HTML, CSS e JavaScript.
-                    </p> 
-                    <button class="btn-work">Trabalhos</button>
-                    
-                </div> 
-                <div class="image-tool">
-                    <img src="img/undraw_static_assets_rpm6.png" alt="">
-                </div> 
+                <div class="box-img-perfil">
+                    <img src="img/profile-pic.png" alt="">
+                </div>
             </div>
+                
+            
+        </main>
+            
+    
+                
+        
+            
+</main>   
+</div>
 
                 
                  
@@ -81,13 +74,7 @@
                 
                     
                     
-                </div>
-                        
-                        
-                    
-        </main>   
-    </div>
-    <!-- Cabeçalho -->
+   
    
 
     <script src="assets/script.js"></script>

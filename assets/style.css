@@ -1,172 +1,140 @@
 * {
     padding: 0;
     margin: 0;
-} 
+}
 body {
-    background: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-    
-} 
-
-/* Cabeçalho */
-a {
-    text-decoration: none; 
-    color: rgb(108, 31, 209);
-} 
-
-.box-header { 
-    display: block;
-    margin: 50px auto;
-    width: 80%;
-    display: flex; 
-    justify-content: space-evenly; 
+}
+.box-flex {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-} 
-    
-.email{
-    font-weight: 600;
-}
-.logo-grey {
-    width: 15%;
-}
-    
-
-.box-dois {
-    width: 100%;
-    display: flex;
-} 
-    
-  
-.box-tres {
-    width: 50%; 
-    display: flex; 
-    justify-content: space-evenly;
-}  
-
-/* Introdução */ 
-
-.box-intro {
-    width: 80%;
-    height: 70vh;
-    display: flex;  
-    margin: 0 auto;
-} 
-    
-.box-contact {
-    height: 30vh;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-evenly;
-    margin: auto 0;
-}  
-
-
- .icon {
-    width: 100%;
- }   
- .nome {
-    color: rgb(108, 31, 209);
-    font-size: 50px;
-    font-weight: 800;
-    width: 10%; 
- } 
- span {
-    color:rgb(108, 31, 209);
-    font-weight: 600;
- }
- p {
-    color: rgb(126, 125, 125);
-    width: 100%;
- } 
-   
- .box-text-intro {
-     width: 30%;
-     height: 70vh;
-     display: flex;
-     flex-direction: column;
-     margin: auto 100px;
-     
- } 
- .box-text-intro p {
-    margin-top: 50px;
- }  
-
- .perfil {
-     padding: 18px;
-     border-radius: 100%;
-     margin-left: 20vh;
-     width: 60%;
- } 
-     
- /* dark-mode / light-mode */
-    
- .light-mode {
-     width: 5%;
-     margin-left: 10px;
- }    
- .dark-mode {
-     width: 5%;
-     margin-left: 10px;
-     display: none;
- } 
-
- /* Oq eu sei fazer */ 
-
-.box-service {
-    display: flex;
-    margin: auto 40vh;
-}
-.box-title {
-    color: rgb(126, 125, 125);
 }   
-.subtitle {
-    color: rgb(126, 125, 125);
-    font-size: 18px;
+ul {
+    width: 40%;
+    display: flex; 
+    list-style: none;
+    justify-content: space-evenly;
 } 
-.box-text-service {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 40vh;
-    margin-top: 12vh; 
-    /*  border: 3px solid rgb(126, 125, 125);*/
-    border-radius: 5px;
-    padding: 10px;
-}  
-
-.box-text-service h2 {
-    text-align: center;
-} 
-.btn-work {
-    margin: 10px auto;
+li {
+    color: rgb(83, 83, 83);
+    font-size: 15px;
     font-weight: 600;
-    width: 30%;
-    background-color: rgb(108, 31, 209);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
 }
-.btn-work:hover {
-    cursor: pointer;
+/* botao email */
+button {
+    font-family: inherit;
+    font-size: 15px;
+    background: royalblue;
     color: white;
-}
-.flex {
-    width: 100%;
+    padding: 0.1em 0.8em;
+    padding-left: 0.9em;
     display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+/* TITULO/RESUME */
+.box-intro-glob {
+    
+    width: 50%;
 }
-.image-tool {
-    margin: auto 25vh;
+.box-intro {
+    margin-top: 10vh;
+    margin-left: 17.5vh;
+    width: 50%;
 }
-.image-tool img {
-    width: 100%;
+    
+.name {
+    color: royalblue;
+    font-weight: 500;
+    font-size: 15px;
+} 
+.text-intro {
+    font-weight: 800;
+    font-size: 50px;
+}
+.box {
+    display: flex;
+    
+}
+img {
+    width: 80%;
+    margin-top: 10vh;
 }
     
-  
-
-    
-
     
     
-
-    
+/* botao curriculo */    
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    margin-top: 5vh;
+    margin-left: 17.5vh;
+   }
+   
+   .cssbuttons-io-button svg {
+    margin-right: 8px;
+   }
+   
+   .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+   }
+   
+   .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+   }
     
