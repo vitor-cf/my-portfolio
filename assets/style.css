@@ -2,6 +2,19 @@
     padding: 0;
     margin: 0;
 }
+*::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: royalblue;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -55,11 +68,12 @@ button {
    }
    
    button:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    transform: translateX(2em) rotate(45deg) scale(1.1);
    }
    
    button:hover span {
-    transform: translateX(5em);
+    transform: translateX(8em);
+    color: white;
    }
    
    button:active {
@@ -81,15 +95,22 @@ button {
     width: 50%;
 }
 .box-intro {
-    margin-top: 10vh;
+    margin-top: 7vh;
     margin-left: 17.5vh;
     width: 50%;
+    animation: textIn 2s linear;
 }
-    
+@keyframes textIn {
+    from {margin-left: 0;
+    opacity: 0;}
+    to {margin-left: 17.5vh;
+    opacity: 1;}
+}    
 .name {
     color: royalblue;
     font-weight: 500;
     font-size: 15px;
+    margin-bottom: 2vh;
 } 
 .text-intro {
     font-weight: 800;
@@ -99,42 +120,216 @@ button {
     display: flex;
     
 }
-img {
+.fotoperfil {
     width: 80%;
-    margin-top: 10vh;
+    margin-top: 10vh; 
+    animation: fadeIn 1s linear;
+
 }
-    
-    
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1;}
+}    
     
 /* botao curriculo */    
-/* From uiverse.io by @adamgiebl */
-.cssbuttons-io-button {
-    display: flex;
-    align-items: center;
-    font-family: inherit;
+
+/* From uiverse.io */
+.btn-download {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
     font-weight: 500;
-    font-size: 17px;
-    padding: 0.8em 1.5em 0.8em 1.2em;
-    color: white;
-    background: #ad5389;
-    background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+    color: #000;
+    background-color: #fff;
     border: none;
-    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
-    letter-spacing: 0.05em;
-    border-radius: 20em;
-    margin-top: 5vh;
-    margin-left: 17.5vh;
-   }
-   
-   .cssbuttons-io-button svg {
-    margin-right: 8px;
-   }
-   
-   .cssbuttons-io-button:hover {
-    box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-   }
-   
-   .cssbuttons-io-button:active {
-    box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-   }
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+    margin-left: 15vh;
+    margin-top: 3vh;
+  }
+  
+  .btn-download:hover {
+    background-color: #2da9da;
+    box-shadow: 0px 15px 20px rgb(5, 101, 156);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .btn-download:active {
+    transform: translateY(-1px);
+  }
+
+  /*  botao contato  */ 
+  .btn-contato {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+    margin-left: 8vh;
+    margin-top: 3vh;
+  }
+  
+  .btn-contato:hover {
+    background-color: #2da9da;
+    box-shadow: 0px 15px 20px rgb(5, 101, 156);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .btn-contato:active {
+    transform: translateY(-1px);
+  }
+  /* flex box btn */ 
+  .box-btn-contact {
+    display: flex; 
+  } 
+
+  /* box tools */ 
+  .title-tools {
+    margin-top: 18vh;
+    text-align: center;
+    margin-bottom: 15vh;
+  }
+  .icons-tools {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
     
+  #html {
+    display: block;
+  }
+  .icon {
+    margin-left: 20px;
+    width: 5%;
+    
+  }  
+  .icon:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* sobre mim */ 
+.title-resume, .text-resume {
+    margin: 15px auto;
+    width: 40%;
+    text-align: center;
+} 
+.title-resume {
+    color: #e9e8e8;
+}
+.text-resume {
+    font-weight: 200;
+    color: white;
+}
+strong {
+    font-weight: 400;
+    color: black;
+}
+.background-box {
+    background-color: royalblue;
+    padding: 20px; 
+    box-shadow: rgba(212, 212, 214, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: backIn 2s linear;
+}
+@keyframes backIn {
+    from{opacity: 0;}
+    to{
+        opacity: 1;
+    }
+}
+/* projeto */
+.title-projeto-um {
+    margin-top: 20vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    color: rgb(20, 20, 20);
+}
+.title-projeto {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    color: rgb(20, 20, 20);
+}
+.name-client {
+    color: #c4c4c4;
+    font-weight: 400;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.text-projeto {
+    color: rgb(255, 255, 255);
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.box-projeto {
+    background-color: royalblue;
+    margin-left: 17.5vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10vh;
+} 
+.flex-box-projeto {
+    display: flex;
+}
+/* botao acessar site */
+ /* From uiverse.io by @alexroumi */
+.btn-projeto {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .btn-projeto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #001146;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .btn-projeto:hover {
+    color: #e8e8e8;
+   }
+   
+   .btn-projeto:hover::before {
+    width: 100%;
+   }
