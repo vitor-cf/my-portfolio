@@ -14,14 +14,14 @@
     <!-- Cabeçalho -->
         <header>
             <div class="box-flex">
-                <span class="logo">Logotipo</span> 
+                <!-- <span class="logo">Logotipo</span> -->
             <ul>
-                <li>HOME</li>
-                <li>RESUMO</li>
-                <li>PROJETOS</li>
-                <li>CONTATO</li>
+                <li><a href="#home">HOME</a> </li>
+                <li> <a href="#resume">RESUMO</a></li>
+                <li> <a href="#project">PROJETOS</a></li>
+                <li> <a href="#contact">CONTATO</a></li>
             </ul> 
-            <button>
+            <button class="btn-email">
                 <div class="svg-wrapper-1">
                   <div class="svg-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
@@ -41,15 +41,15 @@
             <div class="box">
                 <div class="box-intro-glob">
                     <div class="box-intro">
-                        <h1 class="name">VITOR FERREIRA</h1>
+                        <h1 class="name" id="home">VITOR FERREIRA</h1>
                     <span class="text-intro">Oi, meu nome é Vitor.
                         Sou desenvolvedor Front-end.
                     </span>
                     </div>
                     <div class="box-btn-contact">
-                        <button class="btn-download">&#10549; Download CV
+                        <button class="btn-download"><a href="download/vitor-curriculo.pdf" download="file:///C:/Users/spect/Downloads/vitor-curriculo.pdf">&#10549; Download CV</a> 
                         </button> 
-                        <button class="btn-contato">&#128222; Contato
+                        <button class="btn-contato"> <a href="https://api.whatsapp.com/send/?phone=5571991182502&text&type=phone_number&app_absent=0">&#128222; Contato</a>
                         </button>
                     </div> 
                 </div>
@@ -95,7 +95,7 @@
             </section> 
 
             
-            <section class="container-resume">
+            <section class="container-resume" id="resume">
                 <div class="background-box">
                     <h1 class="title-resume">Resumo</h1> 
                     <p class="text-resume">Sou desenvolvedor Front-end em busca de novos desafios, atualmente desenvolvo pequenos projetos com soluções simples.
@@ -112,39 +112,44 @@
                     
                 
 
-            <section class="container-myproject">
+            <section class="container-myproject" id="project">
                 <h1 class="title-projeto-um">PROJETOS</h1>
+                <div class="box-filter">
+                    <button class="btn-filter" id="todos">Todos</button>
+                    <button class="btn-filter" id="acd">Acadêmicos</button>
+                    <button class="btn-filter" id="freela">Freelancer</button>
+                </div>
                 <div class="flex-box-projeto">
                         <!-- LarryFasion -->
-                <div class="box-projeto">
+                <div class="box-projeto" id="larry">
                     <h1 class="title-projeto">Sistema de agendamento</h1>
                     <h2 class="name-client">Larry Fashion</h2> 
                     <p class="text-projeto">Criei um sistema simples de agendamento. O cliente
                         preencher o formulário e os dados são enviados para o whatsapp 
                         diretamente formatados no chat. 
                     </p> 
-                    <button class="btn-projeto"> Acesse
+                    <button class="btn-projeto"><a href="https://larryfashion.netlify.app">Acesse</a> 
                     </button>
                 </div>   
 
                         <!-- Site Streamer -->
-                <div class="box-projeto">
+                <div class="box-projeto" id="streamer">
                     <h1 class="title-projeto">Site streamer</h1>
                     <h2 class="name-client">Grupo de Universitários</h2> 
                     <p class="text-projeto">Recriei uma site streamer e implementei algumas
                         funções, como a sinopse e o trailer de alguns filmes. 
                     </p> 
-                    <button class="btn-projeto"> Acesse
+                    <button class="btn-projeto"> <a href="https://plataformastreamer.netlify.app">Acesse</a>
                     </button> 
                 </div>  
 
                     <!-- Recriando Instagram --> 
-                    <div class="box-projeto">
+                    <div class="box-projeto" id="insta-filter">
                         <h1 class="title-projeto">Recriando login Instagram</h1>
                         <h2 class="name-client">Projeto acadêmico</h2> 
                         <p class="text-projeto">Recriando layout de login do Instagram. 
                         </p> 
-                        <button class="btn-projeto"> Acesse
+                        <button class="btn-projeto"> <a href="https://logininstragram.netlify.app/">Acesse</a>
                         </button> 
                 </div> 
             </div>
@@ -164,7 +169,13 @@
                     
            <!-- rodapé -->           
         <footer>
-            
+            <div class="box-background" id="contact">
+                <h1 class="nome-contatos">CONTATOS</h1> 
+                <div class="box-icons-contatos">
+                   <a href="https://www.linkedin.com/in/-vitorferreira/"><img src="img/linkedin.png" alt="" class="icon-contact-in"></a> 
+                   <a href="https://github.com/vitor-cf"><img src="img/github-color.png" alt="" class="icon-contact-github"></a> 
+                </div>
+            </div>
         </footer>  
                     
                     
@@ -186,5 +197,6 @@
    
 
 <script src="assets/script.js"></script>
+<script src="assets/filter.js"></script>
 </body>
 </html>
