@@ -383,14 +383,17 @@ strong {
    /* img produtos */
 
    .flex-img-projeto {
-    width: 100%;
+    width: 20%;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 25px;
     justify-content: center;
-   }   
+    margin: 50px auto;
+    }   
+    
+    
    .img-projetos {
-    width: 20%;
+    width: 100%;
+    
    } 
    .btn-projeto-link {
     position: absolute;
@@ -404,8 +407,26 @@ strong {
     border: none; 
     font-weight: 1000;
    } 
+   #btn-mouseover { 
+    cursor: pointer;
+    display: none;
+   }     
+
+   /* CARDAPIO NAVBAR */
+
+   .box-cardapio-list {
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(202, 199, 199);
+    display: flex;
+    flex-direction: column;
+    
+   } 
 
 
-   
+
+  
+
+  
    
    
