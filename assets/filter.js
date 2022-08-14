@@ -8,22 +8,28 @@ function filtroAcademico () {
     let noStream = document.getElementById('streamer');
     noStream.style.display = 'none';
 
+    let instaFlex = document.getElementById('insta-filter');
+    instaFlex.style.display = 'flex';
 } 
 
 function filtroTodos () {
-    let testeum = document.getElementById('larry');
-    testeum.style.display = 'flex'; 
+    let todoFlexLarry = document.getElementById('larry');
+    todoFlexLarry.style.display = 'flex'; 
 
-    let testedois = document.getElementById('streamer');
-    testedois.style.display = 'flex'; 
+    let todoFlexStreamer = document.getElementById('streamer');
+    todoFlexStreamer.style.display = 'flex'; 
 
-    let testequatro = document.getElementById('insta-filter');
-    testequatro.style.display = 'flex';
+    let todoFlexInsta = document.getElementById('insta-filter');
+    todoFlexInsta.style.display = 'flex';
 }
 
-function filtroFreela() {
-    let testetres = document.getElementById('insta-filter');
-    testetres.style.display = 'none'; 
+function filtroFreela() {   
+    let freeFlexStreamer = document.getElementById('streamer');
+    freeFlexStreamer.style.display = 'flex'; 
+    
+
+    let freeNoInsta = document.getElementById('insta-filter');
+    freeNoInsta.style.display = 'none'; 
     
 } 
     

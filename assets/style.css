@@ -360,14 +360,10 @@ strong {
     cursor: pointer;
     border: 1px solid royalblue;
     background-color: white;
-    transform: translateY(-7px); 
+    
    } 
-   .btn-filter:active {
-    border: 1px solid royalblue;
-    background-color: white;
-
-   } 
-
+   
+   
    /* Footer */
 
    .box-background {
@@ -382,5 +378,34 @@ strong {
    .nome-contatos {
     font-size: 60px; 
     color: #e4e3e3;
-   }
+   } 
+
+   /* img produtos */
+
+   .flex-img-projeto {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+   }   
+   .img-projetos {
+    width: 20%;
+   } 
+   .btn-projeto-link {
+    position: absolute;
+    margin-top: 17vh; 
+    
+    } 
+    
+   .btn-style-projeto {
+    padding: 20px; 
+    border-radius: 10px;
+    border: none; 
+    font-weight: 1000;
+   } 
+
+
+   
+   
    
