@@ -1,0 +1,27 @@
+/* RESPONSIVE */
+
+@media only screen and (max-width: 472px) {
+
+    ul {
+        display: none;
+    } 
+    .fotoperfil {
+        display: none;
+    } 
+    .box-intro {
+        margin: auto 20px;
+        width: 100%;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .text-intro {
+        font-size: 30px;
+    }
+    .btn-download {
+        margin-left: 10px;
+    }
+    .btn-contato {
+        margin-left: 10px;
+    }
+   }
