@@ -7,10 +7,27 @@
     } 
     .fotoperfil {
         display: none;
+       
+    } 
+    .fotoperfil-mobile {
+        display: flex;
+        width: 100%; 
+        animation: fadeIn 1s linear;
+    }
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1;}
     } 
     .box-intro {
         margin: auto 20px;
-        width: 100%;
+        width: 100%; 
+        animation: textIn 2s linear;
+    } 
+    @keyframes textIn {
+        from {margin-left: 0;
+        opacity: 0;}
+        to {margin-left: 20px;
+        opacity: 1;}
     }
     .name {
         font-size: 15px;
@@ -46,5 +63,33 @@
         margin-left: 0;
         width: 70%;
         
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-cardapio {
+        
+        display: flex;
+    } 
+    .box-cardapio-list {
+        
+        position: absolute;
+        left: 0; 
+        top: 0;
+        width: 100%;
+        height: 30vh;
+    }
+    .links-card {
+        font-size: 30px;
+        font-weight: 1000;
+        margin: 10px;
+    } 
+    #close {
+        font-size: 12px;
+        
+    }
+    .card-fixed {
+        position: fixed;
     }
    }
